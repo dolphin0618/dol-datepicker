@@ -2,7 +2,7 @@
 压缩后js大小在10K左右，轻便可以合并到其他脚本中减少请求。
 
 ## 示例：
-* [演示地址](http://htmlpreview.github.io/?https://dolphin0618.github.io/dol-datepicker/index.html)
+* [演示地址](https://dolphin0618.github.io/dol-datepicker/)
 
 ## 功能
 
