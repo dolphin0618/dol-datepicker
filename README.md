@@ -1,10 +1,14 @@
 # dol-datepicker （轻便的PC端的日期时间组件）
-## 示例：**
-* [演示地址](https://dolphin0618.github.io/dol-datepicker/index.html)
+压缩后js大小在10K左右，轻便可以合并到其他脚本中减少请求。
+
+## 示例：
+* [演示地址](http://htmlpreview.github.io/?https://dolphin0618.github.io/dol-datepicker/index.html)
 
 ## 功能
 
-- [x] 年月日
+- [x] 可选年月日时分秒
+- [x] 灵活动态指定时间范围
+- [x] 制定某部分功能显示隐藏
 
 ## 使用
 **引入**
@@ -22,13 +26,13 @@
     elemName: 'domid',
     format: 'YYYY-MM-DD hh:mm:ss',
     min: '1970-01-01 00:00:00',
-		max: '2099-12-12 23:59:59',
-		hasTime: true,
-		hasClear: true,
-		hasToday: true,
-		hasConfirm: true,
-		fixed: false,
-		callBack: null
+	max: '2099-12-12 23:59:59',
+	hasTime: true,
+	hasClear: true,
+	hasToday: true,
+	hasConfirm: true,
+	fixed: false,
+	callBack: null
   });
 ```
 
@@ -50,6 +54,7 @@
 |callBack | {fn(a, b)} | 回调函数,a为字符串格式，b为时间戳|
 
 **方法**
+
 挂载在实例对象上的方法
 
 ```js
