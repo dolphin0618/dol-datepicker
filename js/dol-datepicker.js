@@ -1,5 +1,5 @@
 /*
-  dol-datepicker 0.1.0 <>
+  dol-datepicker 0.1.0 <https://github.com/dolphin0618/dol-datepicker>
   shanghang 2017-12-12
 */
 "use strict";
