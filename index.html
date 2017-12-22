@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>日期插件</title>
+<link type="text/css" rel="stylesheet" href="./dist/dol-datepicker.css">
+<style type="text/css">
+*{margin:0;padding:0;list-style:none;}
+body{background-color:#E3E3E3; font-size:14px; color:#333; font-family:'微软雅黑'}
+.main{width: 1000px;margin: 0 auto;background: #fff;padding:50px}
+#date1,.time{display: inline-block;width: 200px;height: 30px;border: 1px solid #ccc;vertical-align: middle;margin:20px 5px;line-height: 30px}
+</style>
+</head>
+<body>
+	<div class="main">
+		<h1>示例1</h1>
+		<input type="text" id="date1"/>
+        （限制四天之前不可选）
+		<h1>示例2</h1>
+		<div class="box">
+			<span>开始时间</span>
+			<div class="time" id="date2"></div>
+			<span>~</span>
+			<span>结束时间</span>
+			<div class="time" id="date3"></div>
+			<span>（限制从开始时间的后两天开始）</span>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="./dist/dol-datepicker.js"></script>
+<script type="text/javascript">
+	// demo1
+    var picker1 = new Datepicker({
+        elemName: 'date1',
+        format: 'YYYY-MM-DD hh:mm:ss',
+        min: -4,
+        callBack: function(a, b){
+        	console.log(a, b)
+        }
+    });
+
+    // demo2
+    var picker2 = new Datepicker({
+        elemName: 'date2',
+        format: 'YYYY-MM-DD hh:mm',
+        callBack: function(a, b){
+        	picker3.setMinScope(b, 2);
+        }
+    });
+    var picker3 = new Datepicker({
+        elemName: 'date3',
+        format: 'YYYY-MM-DD hh:mm',
+        callBack: function(a, b){
+        	picker2.setMaxScope(a);
+        }
+    });
+</script>
+</html>
