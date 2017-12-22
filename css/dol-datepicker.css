@@ -1,3 +1,7 @@
+/*
+  dol-datepicker 0.1.0 <https://github.com/dolphin0618/dol-datepicker>
+  shanghang 2017-12-12
+*/
 .datepicker-sh{width: 240px;background: #fff;border: 1px solid #ccc;font-size: 12px;display: none;z-index:999}
 .datepicker-sh .dp_top{height: 26px;padding: 5px;background: #12a5f8;}
 .datepicker-sh .dp_box{float: left;}
