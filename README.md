@@ -26,13 +26,13 @@
     elemName: 'domid',
     format: 'YYYY-MM-DD hh:mm:ss',
     min: '1970-01-01 00:00:00',
-	max: '2099-12-12 23:59:59',
-	hasTime: true,
-	hasClear: true,
-	hasToday: true,
-	hasConfirm: true,
-	fixed: false,
-	callBack: null
+    max: '2099-12-12 23:59:59',
+    hasTime: true,
+    hasClear: true,
+    hasToday: true,
+    hasConfirm: true,
+    fixed: false,
+    callBack: null
   });
 ```
 
